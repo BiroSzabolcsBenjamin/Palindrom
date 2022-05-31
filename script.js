@@ -4,6 +4,8 @@ infoTxt = document.querySelector(".info-text");
 let filterInput;
 
 checkBtn.addEventListener("click", () => {
+    // a felhasználó által beírt karakterek felosztása, megfordítása
+    // és egyetlen szóba való egyesítése
     let reverseInput = filterInput.split("").reverse().join("");
     infoTxt.style.display = "block";
     if(filterInput != reverseInput) {
@@ -14,6 +16,7 @@ checkBtn.addEventListener("click", () => {
 
 
 txtInput.addEventListener("keyup", () => {
+    // szóközök és speciális karakterek eltávolítása a beírt értékből
     filterInput = txtInput.value.toLowerCase().replace(/[^A-Z0-9]/ig, "");
     if(filterInput) {
         return checkBtn.classList.add("active");
