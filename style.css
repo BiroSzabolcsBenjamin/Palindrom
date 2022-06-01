@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: aquamarine;
+    background: #1f3d7a;
 }
 
 .wrapper {
@@ -29,7 +29,7 @@ header p{
     text-align: center;
     margin-top: 5px;
     font-size: 18px;
-    color: gray;
+    color: #1f3d7a;
 }
 
 .inputs{
@@ -57,7 +57,7 @@ header p{
     color: white;
     border-radius: 5px;
     pointer-events: none;
-    background: aquamarine;
+    background: #1f3d7a;
 }
 .inputs button.active{
     opacity: 1;
@@ -70,5 +70,5 @@ header p{
     margin-bottom: 18px;
 }
 .info-text span{
-    color: aquamarine;
+    color: red;
 }
